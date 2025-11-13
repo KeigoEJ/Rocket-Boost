@@ -32,7 +32,6 @@ public class Movement : MonoBehaviour
     {
         if (thrust.IsPressed())
         {
-
             rb.AddRelativeForce(Vector3.up * thrustStrenght * Time.fixedDeltaTime);
             if (!audioSource.isPlaying)
                 audioSource.Play();
